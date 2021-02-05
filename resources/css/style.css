@@ -50,6 +50,7 @@ nav ul .social-media a {
 nav .social-media {
     padding-top: 10px;
     float: right;
+    letter-spacing: 8px;
     padding-right: 4vw;
 }
 
@@ -216,7 +217,7 @@ nav ul a:hover:after {
 }
 
 .arrows {
-    font-size: 1.7ew;
+    font-size: 40px;
     color: #ccc;
 }
 
@@ -309,6 +310,7 @@ nav ul a:hover:after {
 
 .section-form {
     width: 100%;
+    height: 70vp;
     margin-top: 20vh;
     text-align: center;
     position: relative;
@@ -324,7 +326,9 @@ nav ul a:hover:after {
 }
 
 .description-form .icon-big {
-    color: black;
+    color: #444444;
+    font-weight: 100;
+    font-size: 35px;
 }
 
 .section-form h1 {
@@ -334,7 +338,7 @@ nav ul a:hover:after {
 
 .wrapper-contact {
     margin-top: 40px;
-    margin-left: 25px;
+    margin-left: 0px;
 }
 
 .description-form2 {
@@ -377,11 +381,18 @@ input[type=text], input[type=number], input[type=email], select, textarea {
     padding: 7px;
     border: none;
     border-radius: 8px;
+    -moz-appearance: textfield;
     background-color: #F7F7F7;
 }
+#message{
+    width: 522px;
+}
 
-#message {
-    height: 200px;
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 /* h2 {
@@ -459,12 +470,14 @@ input[type=submit]:hover, input[type=submit]:active {
 
 .section-features {
     /* background-color: #f2f2f2; */
-    margin-top: 20vh;
+    margin-top: 50vh;
     text-align: center;
+    height: 100vh;
+    
 }
 
 .feature-icon {
-    font-size: 151px;
+    font-size: 120px;
     color: #2bd77c;
     margin-bottom: 11vh;
 }
@@ -478,7 +491,7 @@ input[type=submit]:hover, input[type=submit]:active {
 }
 
 footer {
-    margin-top: 12.0vh;
+    margin-top: 50.0vh;
     display: table;
     text-align: center;
     margin-left: auto;
