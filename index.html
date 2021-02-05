@@ -1,132 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href ="resources/css/style.css">
-        
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/e0b564eef2.js" crossorigin="anonymous"></script>
-        
-        <title>Deals On Bills</title>
-    </head>
-    <body>
-        <header>
-            <nav id="navbar">
-                <div class="row">
-                    <div class="logo">
-                        <img src="resources/css/img/logo.png" alt"Logo" class="logo-img">
-                        <a class="logo-text" href="#">Deals on bills</a>
-                    </div>
-                    
-                    <ul class="main-nav">
-                        <li><a href="#">How it Works</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#contact-form">Contact Us</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <section class="app-details clearfix">
-            <div class="row">
-                <div class="col span-1-of-2 ">
-                    <div class="app-text">
-                        <h1 style="color:#3D9970"> Get 'em Deals</h1>
-                        
-                        <h1 style="color:#3D9970"> On 'em Bills</h1>
-                        <br>
-                        <p > Saving Money has </p>
-                        <br>
-                        <p > never been this easier</p>
-                    </div>
-                    <div class="app-link">
-                        <a href="" class="btn-app"><img src="resources/css/img/download-app-android.png" alt="App Store Button"></a>
-                        <a href="" class="btn-app"><img src="resources/css/img/download-app.svg" alt="Android Store Button"></a>
-                    </div>
-                </div>
-                 <div class="col span-1-of-2 app-img">
-                    <img src="resources/css/img/appdemo.jpg" class="appss">            
-                </div>
-                
-            </div>
-        </section>
-        <section class = "section-working">
-            <div class="row">
-                
-            </div>
-        </section>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
 
-        <section class="section-form" id="contact-form">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0b564eef2.js" crossorigin="anonymous"></script>
+
+    <title>Deals On Bills</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
             <div class="row">
-                <h2> We're happy to hear from you</h2>
+                <div class="logo">
+                    <img src="resources/css/img/dob_white_x250.png" alt="Logo" class="logo-img">
+                </div>
+                <ul class="main-nav">
+                    <li><a href="#home" class="navelement active">Home</a></li>
+                    <li><a href="#features" class="navelement">Features</a></li>
+                    <li><a href="#contact-form" class="navelement">Contact</a></li>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></i></a>
+                    </div>
+                </ul>
             </div>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <div >
+        </nav>
+    </header>
+    <section class="app-details clearfix" id="home">
+        <div class="row">
+            <div class="col span-1-of-2 marketing-content">
+                <div class="app-text">
+                    <h1> Get 'em Deals</h1>
+                    <h1> On 'em Bills</h1>
+                    <br>
+                    <p> Saving Money has never been this easier</p>
+                </div>
+                <div class="app-link">
+                    <div class="play-stores" onclick="location.href='https://google.com/';">
+                        <div style="height: 50px;">
+                            <i class="fab fa-google-play"></i>
+                        </div>
+                        <div style="height: 50px;">
+                            <p>Get it on <br> Google Play</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="app-stores" onclick="location.href='https://apple.com/';" style="pointer-events: none;">
+                        <i class="fab fa-app-store"></i>
+                        <div>
+                            <p>Comming <br>Soon</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-2 app-img">
+                <button onclick="plusDivs(-1)"><i class="fas fa-angle-left arrows"></i></button>
+                <img class="screenshot" src="resources/css/img/screenshot.png">
+                <img class="screenshot" src="resources/css/img/appdemo.jpg">
+                <button onclick="plusDivs(1)"><i class="fas fa-angle-right arrows"></i></button>
+            </div>
+
+        </div>
+    </section>
+    <section class="section-features" id="features">
+        <div class="row">
+            <div class="col span-1-of-3">
+                <i class="fas fa-map-marker-alt feature-icon"></i>
+                <h2> Get Deals Around You</h2>
+                <p>We show you a curated list of amazing</p>
+                <p>deals near you.</p>
+            </div>
+            <div class="col span-1-of-3">
+                <i class="fas fa-th-list feature-icon"></i>
+                <h2>Explore deals by Category</h2>
+                <p>Deals are categorised for you to help</p>
+                <p>find the deals on things you’re looking for</p>
+            </div>
+            <div class="col span-1-of-3">
+
+                <i class="far fa-bookmark feature-icon"></i>
+                <h2>Save Deals For Later</h2>
+                <p>Save upcomming deals or the deals</p>
+
+                <p>you like.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-form" id="contact-form">
+        <div class="row">
+            <div class="col span-1-of-2 description-form">
+                <h1>Connect With Us</h1>
+                <br>
+                <div class="wrapper-contact">
+                    <div class="contact-phone">
                         <ion-icon name="call-outline" class="icon-big"></ion-icon>
                         <h4 class="contact-text">9823409312/9812031548</h4>
                     </div>
-                    <div >
+                    <br>
+                    <div class="contact-email">
                         <ion-icon name="mail-outline" class="icon-big"></ion-icon>
-                        <h4 class="contact-text">nabinthapa36912@gmail.com/info@dob.com</h4>
-                    </div>
-                    <div>
-                        <ion-icon name="home-outline" class="icon-big"></ion-icon>
-                        <h4 class="contact-text">Balaju,Kathmandu,Nepal</h4>
-                    </div>
-                </div>
-                <div class="col span-1-of-2">
-                    <div class="row">
-                        <form method="post" action="#" class="contact-form">
-                            <div class="row">
-                                <div class="col span-1-of-3">
-                                    <label for="name">Name</label>
-                                </div>
-                                <div class="col span-2-of-3">
-                                    <input type="text" name="name" id="name" placeholder="Your name" required>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col span-1-of-3">
-                                    <label for="email">Email</label>
-                                </div>
-                                <div class="col span-2-of-3">
-                                    <input type="email" name="email" id="email" placeholder="Your email" required>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col span-1-of-3">
-                                    <label>Drop us a line</label>
-                                </div>
-                                <div class="col span-2-of-3">
-                                    <textarea name="message" placeholder="Your message"></textarea>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col span-1-of-3">
-                                    <label>&nbsp;</label>
-                                </div>
-                                <div class="col span-2-of-3">
-                                    <input type="submit" value="Send it!">
-                                </div>
-                            </div>
-                            
-                        </form>
-                    
+                        <h4 class="contact-text">nabinthapa36912@gmail.com</h4>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        
-        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="vendors/js/jquery.waypoints.min.js"></script>
-        <script src="resources/js/script.js"></script>
-    </body>
-    
+            <div class="col span-1-of-2 description-form2">
+                <div class="wrapper-description">
+                    <p>Name</p>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="wrapper-description">
+                    <p>Email</p>
+                    <input type="email" name="name" id="email" required>
+                </div>
+                <div class="wrapper-description">
+                    <p>Phone No</p>
+                    <input type="number" name="name" id="phone-number" required>
+                </div>
+                <div class="wrapper-description">
+                    <p>Message</p>
+                    <input type="text" name="name" id="message" required>
+                </div>
+                <div class="wrapper-description">
+                    <input type="submit" value="Send it!">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>Copyright &copy; Deals On Bills 2021</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <section class="section-form" id="contact-form">
+        <div class="row">
+            <h2> We're happy to hear from you</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <div>
+                    <ion-icon name="call-outline" class="icon-big"></ion-icon>
+                    <h4 class="contact-text">9823409312/9812031548</h4>
+                </div>
+                <div>
+                    <ion-icon name="mail-outline" class="icon-big"></ion-icon>
+                    <h4 class="contact-text">nabinthapa36912@gmail.com/info@dob.com</h4>
+                </div>
+                <div>
+                    <ion-icon name="home-outline" class="icon-big"></ion-icon>
+                    <h4 class="contact-text">Balaju,Kathmandu,Nepal</h4>
+                </div>
+            </div>
+            <div class="col span-1-of-2">
+                <div class="row">
+                    <form method="post" action="#" class="contact-form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Send it!">
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+
+</body>
+
 </html>
