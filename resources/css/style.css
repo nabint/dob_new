@@ -15,7 +15,7 @@ html {
 }
 
 .row {
-    max-width: 90%;
+    max-width: 94%;
     margin: 0 auto;
 }
 
@@ -50,12 +50,21 @@ nav .social-media {
     padding-top: 7px;
     float: right;
     letter-spacing: 8px;
-    padding-right: 4vw;
 }
 
 nav .social-media i {
     padding-left: 12px;
     font-size: 26px;
+}
+
+@media screen and (max-width: 600px) {
+    nav .social-media i {
+        font-size: 22px;
+        /* padding-left: 5px; */
+    }
+    nav .social-media {
+        letter-spacing: 1px;
+    }
 }
 
 .logo {
@@ -73,13 +82,26 @@ nav .social-media i {
     height: 40px;
 }
 
+@media screen and (max-width: 600px) {
+    .logo {
+        height: 54px;
+        width: 54px;
+    }
+    .logo-img {
+        width: auto;
+        height: 34px;
+    }
+}
+
 /*-------------*/
 
 .main-nav .icon {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+/* HamBurger */
+
+/* @media screen and (max-width: 600px) {
     .social-media a:not(:last-child) {
         display: none;
     }
@@ -102,7 +124,7 @@ nav .social-media i {
         margin-bottom: 5px;
         text-align: left;
     }
-}
+} */
 
 /*-------------*/
 
@@ -115,6 +137,12 @@ nav .social-media i {
     overflow: hidden;
     height: 131px;
     position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    .main-nav {
+        margin-left: 70px;
+    }
 }
 
 .main-nav p {
@@ -202,7 +230,7 @@ nav ul a:hover:after {
 }
 
 .app-text {
-    padding-top: 80px;
+    padding-top: 4.8vh;
 }
 
 @media screen and (max-height: 600px) {
@@ -226,12 +254,14 @@ nav ul a:hover:after {
     color: black;
     font-weight: bold;
     margin: 0.1em;
+    text-align: center;
     margin-bottom: none;
 }
 
 .app-text p {
     font-size: 26px;
     margin: 0.1em;
+    text-align: center;
     word-wrap: break-word;
     word-break: break-word;
     text-align-last: center;
@@ -253,7 +283,7 @@ nav ul a:hover:after {
     display: flex;
     width: 220px;
     height: 73px;
-    border: 2px solid #444444;
+    border: 2px solid black;
     box-sizing: border-box;
     border-radius: 8px;
     overflow: hidden;
@@ -325,9 +355,11 @@ nav ul a:hover:after {
 }
 
 .footer_row {
-    margin-top: 100px;
-    margin-right: 4vw;
+    margin-top: 20vh;
+    /* margin-right: 1vw; */
     display: flex;
+    /* position: absolute; */
+    bottom: 0;
     justify-content: space-between;
 }
 
@@ -337,16 +369,16 @@ nav ul a:hover:after {
 
 .footer_right a {
     color: black;
-    font-size: 18;
+    font-size: 18px;
     font-weight: bold;
 }
 
 @media screen and (max-width: 500px) {
-    .privacy {
-        margin-right: 0px;
-    }
     .footer_right a {
-        display: block;
+        font-size: 12;
+    }
+    .privacy {
+        margin-right: 2px;
     }
 }
 
