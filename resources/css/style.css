@@ -231,8 +231,13 @@ nav ul a:hover:after {
 
 .app-text p {
     font-size: 26px;
-    align-items: center;
+    margin: 0.1em;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align-last: center;
 }
+
+@media screen and (max-height: 600px) {}
 
 .app-link {
     margin-top: 80px;
@@ -326,9 +331,7 @@ nav ul a:hover:after {
     justify-content: space-between;
 }
 
-
-
-.privacy{
+.privacy {
     margin-right: 33px;
 }
 
@@ -337,16 +340,15 @@ nav ul a:hover:after {
     font-size: 18;
     font-weight: bold;
 }
+
 @media screen and (max-width: 500px) {
-    .privacy{
+    .privacy {
         margin-right: 0px;
     }
-    .footer_right a{
+    .footer_right a {
         display: block;
-      
     }
 }
-
 
 .footer_right a:hover {
     color: #2bd77c;
